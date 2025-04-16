@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 🧠 Thought Process & Overview
 
-## Getting Started
+This project compares two views — **"Without Simbian"** and **"With Simbian"** — to highlight the difference Simbian makes in handling alerts. The layout switches every 10 seconds, and alerts animate in periodically to mimic real-time behavior.
 
-First, run the development server:
+## 🎞️ Animation Library Used
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This project uses **Framer Motion**, a powerful animation library for React, to handle:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Transitions between the "Without" and "With" Simbian states
+- Smooth entrance/exit animations of alerts
+- Subtle motion effects on UI elements like buttons and icons
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Components like `motion.div`, `AnimatePresence`, and custom `variants` were used to provide a seamless and engaging experience.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ⚠️ Known Issues & Future Improvements
 
-## Learn More
+- The **alert counters reset** every time the section switches. This is intentional for clarity, but could be improved to maintain a live total with smooth increments.
+- **Responsiveness** needs attention, especially around alert layouts and icon spacing on smaller devices.  
+  Due to time constraints and being a **full-time working professional**, I couldn’t focus on optimizing for mobile and tablet views as much as I wanted.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
